@@ -178,7 +178,7 @@ What do events in a transaction have in common?
 - [ ] All events in a transaction must have the same timestamp.
 - [ ] All events in a transaction must have the same sourcetype.
 - [ ] All events in a transaction must have the exact same set of fields.
-- [X] All events in a transaction must be related by one or more fields.
+- [X] **All events in a transaction must be related by one or more fields.**
 
 </li>
 
@@ -310,9 +310,9 @@ Which of the following statements describe the command below? (Choose all that a
 `sourcetype=access_combined | transaction JSESSIONID`
 
 - [ ] An additional field named maxspan is created.
-- [X] An additional field named duration is created.
-- [X] An additional field named eventcount is created.
-- [X] Events with the same JSESSIONID will be grouped together into a single event.
+- [X] **An additional field named duration is created.**
+- [X] **An additional field named eventcount is created.**
+- [X] **Events with the same JSESSIONID will be grouped together into a single event.**
 
 </li>
 
