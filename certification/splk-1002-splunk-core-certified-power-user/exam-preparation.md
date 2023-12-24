@@ -1,0 +1,264 @@
+# [SPLK-1002 - Splunk Core Certified Power User](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html)
+
+This solution is not 100% correct
+
+<ol>
+<li>
+Which one of the following statements about the search command is true?
+
+- [ ] It does not allow the use of wildcards.
+- [ ] It treats field values in a case-sensitive manner.
+- [ ] It can only be used at the beginning of the search pipeline.
+- [X] **It behaves exactly like search strings before the first pipe.**
+
+</li>
+
+---
+
+<li>
+Which of the following actions can the eval command perform?
+
+- [ ] Remove fields from results.
+- [X] **Create or replace an existing field.**
+- [ ] Group transactions by one or more fields.
+- [ ] Save SPL commands to be reused in other searches.
+
+</li>
+
+---
+
+<li>
+When can a pipe follow a macro?
+
+- [X] **A pipe may always follow a macro.**
+- [ ] The current user must own the macro.
+- [ ] The macro must be defined in the current app.
+- [ ] Only when sharing is set to global for the macro.
+
+</li>
+
+---
+
+<li>
+Data models are composed of one or more of which of the following datasets? (Choose all that apply.)
+
+- [X] **Events datasets**
+- [X] **Search datasets**
+- [X] **Transaction datasets**
+- [ ] Any child of event, transaction, and search datasets
+
+</li>
+
+---
+
+<li>
+When using the Field Extractor (FX), which of the following delimiters will work? (Choose all that apply.)
+
+- [X] **Tabs**
+- [X] **Pipes**
+- [X] **Colons**
+- [X] **Spaces**
+
+</li>
+
+---
+
+<li>
+Which group of users would most likely use pivots?
+
+- [X] **Users**
+- [ ] Architects
+- [ ] Administrators
+- [ ] Knowledge Managers
+
+</li>
+
+---
+
+<li>
+
+When multiple event types with different color values are assigned to the same event, what determines the color
+displayed for the event?
+
+- [ ] Rank
+- [ ] Weight
+- [X] **Priority**
+- [ ] Precedence
+
+</li>
+
+---
+
+<li>
+
+Based on the macro definition shown below, what is the correct way to execute the macro in a search string?
+![](C:\Users\furqo\OneDrive\Desktop\splk-1002-prep-8.jpg)
+
+- [ ] "convert_sales(euro,ג‚¬,.79)"
+- [X] **'convert_sales(euro,ג‚¬,.79)'**
+- [ ] "convert_sales($euro$,$ג‚¬$,$.79$)"
+- [ ] 'convert_sales($euro$,$ג‚¬$,$.79$)'
+
+</li>
+
+---
+
+<li>
+
+There are several ways to access the field extractor. Which option automatically identifies the data type, source type,
+and sample event?
+
+- [X] **Event Actions > Extract Fields**
+- [ ] Fields sidebar > Extract New Fields
+- [ ] Settings > Field Extractions > New Field Extraction
+- [ ] Settings > Field Extractions > Open Field Extractor
+
+</li>
+
+---
+
+<li>
+
+Which of the following statements would help a user choose between the transaction and stats commands?
+
+- [ ] stats can only group events using IP addresses.
+- [ ] The transaction command is faster and more efficient.
+- [X] **There is a 1000 event limitation with the transaction command.**
+- [ ] Use stats when the events need to be viewed as a single correlated event.
+
+</li>
+
+---
+
+<li>
+
+By default, how is acceleration configured in the Splunk Common Information Model (CIM) add-on?
+
+- [X] **Turned off.**
+- [ ] Turned on.
+- [ ] Determined automatically based on the sourcetype.
+- [ ] Determined automatically based on the data source.
+
+</li>
+
+---
+
+<li>
+
+Which of the following statements describe the Common Information Model (CIM)? (Choose all that apply.)
+
+- [X] **CIM is a methodology for normalizing data.**
+- [X] **CIM can correlate data from different sources.**
+- [X] **The Knowledge Manager uses the CIM to create knowledge objects.**
+- [X] **CIM is an app that can coexist with other apps on a single Splunk deployment.**
+
+</li>
+
+---
+
+<li>
+
+Which of the following knowledge objects represents the output of an eval expression?
+
+- [ ] Eval fields
+- [X] **Calculated fields**
+- [ ] Field extractions
+- [ ] Calculated lookups
+
+</li>
+
+---
+
+<li>
+
+What do events in a transaction have in common?
+
+- [ ] All events in a transaction must have the same timestamp.
+- [ ] All events in a transaction must have the same sourcetype.
+- [ ] All events in a transaction must have the exact same set of fields.
+- [X] All events in a transaction must be related by one or more fields.
+
+</li>
+
+---
+
+<li>
+
+Which delimiters can the Field Extractor (FX) detect? (Choose all that apply.)
+
+- [X] **Tabs**
+- [X] **Pipes**
+- [X] **Spaces**
+- [X] **Commas**
+
+</li>
+
+---
+
+<li>
+
+A data model consists of which three types of datasets?
+
+- [ ] Constraint, field, value.
+- [X] **Events, searches, transactions.**
+- [ ] Field extraction, regex, delimited.
+- [ ] Transaction, session ID, metadata.
+
+</li>
+
+---
+
+<li>
+
+Where are the results of eval commands stored?
+
+- [X] **In a field.**
+- [ ] In an index.
+- [ ] In a KV Store.
+- [ ] In a database.
+
+</li>
+
+---
+
+<li>
+
+Which of the following statements describe calculated fields? (Choose all that apply.)
+
+- [X] **Calculated fields can be used in the search bar.**
+- [x] **Calculated fields can be based on an extracted field.**
+- [ ] Calculated fields can only be applied to host and sourcetype.
+- [x] **Calculated fields are shortcuts for performing calculations using the eval command.**
+
+</li>
+
+---
+
+<li>
+
+Calculated fields can be based on which of the following?
+
+- [ ] Tags
+- [X] **Extracted fields**
+- [ ] Output fields for a lookup
+- [ ] Fields generated from a search string
+
+</li>
+
+---
+
+<li>
+
+When should transaction be used?
+
+- [ ] Only in a large distributed Splunk environment.
+- [ ] When calculating results from one or more fields.
+- [X] When event grouping is based on start/end values.
+- [ ] When grouping events results in over 1000 events in each group.
+
+</li>
+
+
+
+
+</ol>
