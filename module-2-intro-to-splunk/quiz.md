@@ -2,7 +2,9 @@
 
 # Quiz (Result 93%)
 
-<ol><li>Which of the following searches will return results containing the phrase "failed password"?
+<ol>
+<li>
+Which of the following searches will return results containing the phrase "failed password"?
 
 - [ ] (failed password)
 - [ ] failed password
@@ -13,7 +15,8 @@
 
 ---
 
-<li>By default, which of the following roles are required to share knowledge objects?
+<li>
+By default, which of the following roles are required to share knowledge objects?
 
 - [ ] User
 - [X] **Admin**
@@ -24,7 +27,8 @@
 
 ---
 
-<li> Which character is used in a search before a command?
+<li>
+Which character is used in a search before a command?
 
 - [X] **A pipe (|)**
 - [ ] A tilde (~)
@@ -197,5 +201,6 @@ What determines the timestamp shown on returned events in a search?
 - [ ] The time zone where the event originated
 - [ ] Timestamps are displayed in Greenwich Mean Time
 - [X] **The time zone defined in user settings**
+
 </li>
 </ol>
