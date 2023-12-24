@@ -1,4 +1,4 @@
-# splunk-education
-Splunk Exam Preparation for Certification
+# Splunk Certification
+Splunk Preparation for Certification
 
-https://www.splunk.com/en_us/training/course-catalog.html
+Splunk Core Certified Power User
