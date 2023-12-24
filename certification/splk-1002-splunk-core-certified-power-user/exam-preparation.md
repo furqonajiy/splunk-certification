@@ -284,8 +284,9 @@ When using | timechart by host, which field is represented on the x-axis?
 - [ ] date
 - [ ] host
 - [ ] time
-- [X] <span style="background-color: #3367D1">_time
+- [X] _time
 
+$${\color{red}Red}$$
 </li>
 
 ---
