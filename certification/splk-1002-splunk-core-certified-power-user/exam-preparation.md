@@ -295,10 +295,10 @@ When using | timechart by host, which field is represented on the x-axis?
 Which of the following is the correct way to use the datamodel command to search fields in the Web data model within the
 Web dataset?
 
-- [X] <span style="background-color: #3367D1">`| datamodel Web Web search | fields Web<span style="background-color: #3367D1">`
-- [ ] `| search datamodel Web Web | fields Web<span style="background-color: #3367D1">`
-- [ ] `| datamodel Web Web fields | search Web<span style="background-color: #3367D1">`
-- [ ] `datamodel=Web | search Web | fields Web<span style="background-color: #3367D1">`
+- [X] <span style="background-color: #3367D1">`| datamodel Web Web search | fields Web*`
+- [ ] `| search datamodel Web Web | fields Web*`
+- [ ] `| datamodel Web Web fields | search Web*`
+- [ ] `datamodel=Web | search Web | fields Web*`
 
 </li>
 
