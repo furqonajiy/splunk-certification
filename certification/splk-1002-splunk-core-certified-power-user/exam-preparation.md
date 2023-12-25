@@ -345,7 +345,7 @@ Given the macro definition below, what should be entered into the Name and Argum
 
 What is required for a macro to accept three arguments?
 
-- [A] **The macro's name ends with (3).**
+- [X] **The macro's name ends with (3).**
 - [ ] The macro's name starts with (3).
 - [ ] The macro's argument count setting is 3 or more.
 - [ ] Nothing, all macros can accept any number of arguments.
@@ -423,22 +423,9 @@ Which of the following can be used with the eval command `tostring` function? (C
 
 Which of the following searches show a valid use of a macro? (Choose all that apply.)
 
-- [ ] `index=main source=mySource oldField=* |'makeMyField(oldField)'| table _time newField`
-- [ ] `index=main source=mySource oldField=* | stats if('makeMyField(oldField)') | table _time newField`
-- [ ] `index=main source=mySource oldField=* | eval newField='makeMyField(oldField)'| table _time newField`
-- [ ] `index=main source=mySource oldField=* | "'newField('makeMyField(oldField)')'" | table _time newField`
-
-</li>
-
----
-
-<li>
-
-Which of the following searches show a valid use of a macro? (Choose all that apply.)
-
-- [X] **index=main source=mySource oldField=* |'makeMyField(oldField)'| table _time newField**
+- [X] **index=main source=mySource oldField=*** **|'makeMyField(oldField)'| table _time newField**
 - [ ] index=main source=mySource oldField=* | stats if('makeMyField(oldField)') | table _time newField
-- [X] **index=main source=mySource oldField=* | eval newField='makeMyField(oldField)'| table _time newField**
+- [X] **index=main source=mySource oldField=*** **| eval newField='makeMyField(oldField)'| table _time newField**
 - [ ] index=main source=mySource oldField=* | "newField('makeMyField(oldField)')" | table _time newField
 
 </li>
@@ -449,7 +436,7 @@ Which of the following searches show a valid use of a macro? (Choose all that ap
 
 A user wants to convert numeric field values to strings and also to sort on those values. Which command should be used first, the eval or the sort?
 
-- [ ] It doesn't matter whether eval or sort is used first.
+- [X] **It doesn't matter whether eval or sort is used first.**
 - [ ] Convert the numeric to a string with eval first, then sort.
 - [ ] Use sort first, then convert the numeric to a string with eval.
 - [ ] You cannot use the sort command and the eval command on the same field.
@@ -479,6 +466,20 @@ Which of the following statements describe data model acceleration? (Choose all 
 - [X] **You must have administrative permissions or the accelerate_datamodel capability to accelerate a data model.**
 
 </li>
+
+---
+
+<li>
+
+How does a user display a chart in stack mode?
+
+- [ ] By using the stack command.
+- [ ] By turning on the Use Trellis Layout option.
+- [X] **By changing Stack Mode in the Format menu.**
+- [ ] You cannot display a chart in stack mode, only a timechart.
+
+</li>
+
 
 ---
 
@@ -571,7 +572,167 @@ In what order are the following knowledge objects/configurations applied?
 
 </li>
 
+---
 
+<li>
+
+In which of the following scenarios is an event type more effective than a saved search?
+
+- [ ] When a search should always include the same time range.
+- [ ] When a search needs to be added to other users' dashboards.
+- [X] **When the search string needs to be used in future searches.**
+- [ ] When formatting needs to be included with the search string.
+
+</li>
+
+---
+
+<li>
+
+When using the transaction command, what does the argument maxspan do?
+
+- [ ] Sets the maximum total time between events in a transaction.
+- [ ] Sets the maximum length of all the events within a transaction.
+- [X] **Sets the maximum total time between the earliest and latest events in a transaction.**
+- [ ] Sets the maximum length that any single event can reach to be included in the transaction.
+
+</li>
+
+---
+
+<li>
+
+When creating a Search workflow action, which field is required?
+
+- [X] **Search string**
+- [ ] Data model name
+- [ ] Permission setting
+- [ ] An eval statement
+
+</li>
+
+---
+
+<li>
+
+To identify all of the contributing events within a transaction that contain at least one REJECT event, which syntax is correct?
+
+- [ ] index=main REJECT | transaction sessionid
+- [X] **index=main | transaction sessionid | search REJECT**
+- [ ] index=main | transaction sessionid | where transaction=reject
+- [ ] index=main | transaction sessionid | where transaction="REJECT*"
+
+</li>
+
+---
+
+<li>
+
+After manually editing a regular expression (regex), which of the following statements is true?
+
+- [ ] Changes made manually can be reverted in the Field Extractor (FX) UI.
+- [X] **It is no longer possible to edit the field extraction in the Field Extractor (FX) UI.**
+- [ ] It is not possible to manually edit a regular expression (regex) that was created using the Field Extractor (FX) UI.
+- [ ] The Field Extractor (FX) UI keeps its own version of the field extraction in addition to the one that was manually edited.
+
+</li>
+
+---
+
+<li>
+
+Which of the following statements describes POST workflow actions?
+
+- [ ] Configuration of a POST workflow action includes choosing a sourcetype.
+- [ ] POST workflow actions can be configured to send email to the URI location.
+- [ ] By default, POST workflow actions are shown in both the event and field menus.
+- [X] **POST workflow actions can be configured to send POST arguments to the URI location.**
+
+</li>
+
+---
+
+<li>
+
+Which of the following statements is true, especially in large environments?
+
+- [ ] Use the stats command when you need to group events by two or more fields.
+- [X] **The stats command is faster and more efficient than the transaction command.**
+- [ ] The transaction command is faster and more efficient than the stats command.
+- [ ] Use the transaction command when you want to see the results of a calculation.
+
+</li>
+
+---
+
+<li>
+
+What does the following search do?
+
+`index=corndog type= mysterymeat action=eaten | stats count as corndog_count by user`
+
+- [ ] Creates a table of the total count of users and split by corndogs.
+- [X] **Creates a table of the total count of mysterymeat corndogs split by user.**
+- [ ] Creates a table with the count of all types of corndogs eaten split by user.
+- [ ] Creates a table that groups the total number of users by vegetarian corndogs.
+
+</li>
+
+---
+
+<li>
+
+Which of the following statements about event types is true? (Choose all that apply.)
+
+- [X] **Event types can be tagged.**
+- [ ] Event types must include a time range.
+- [X] **Event types categorize events based on a search.**
+- [X] **Event types can be a useful method for capturing and sharing knowledge.**
+
+</li>
+
+---
+
+<li>
+
+The Field Extractor (FX) is used to extract a custom field. A report can be created using this custom field. The created report can then be shared with other people in the organization.
+
+If another person in the organization runs the shared report and no results are returned, why might this be? (Choose all that apply.)
+
+- [ ] Fast mode is enabled.
+- [ ] The dashboard is private.
+- [X] **The extraction is private.**
+- [X] **The person in the organization running the report does not have access to the index.**
+
+</li>
+
+---
+
+<li>
+
+Which of the following statements describe the search string below?
+
+`| datamodel Application_State All_Application_State search`
+
+- [ ] Events will be returned from dataset named Application_State.
+- [X] **Events will be returned from the data model named Application_State.**
+- [ ] Events will be returned from the data model named All_Application_State.
+- [ ] No events will be returned because the pipe should occur after the datamodel command.
+
+</li>
+
+---
+
+<li>
+
+What is the correct syntax to search for a tag associated with a value on a specific field?
+
+- [ ] tag=<field>
+- [ ] tag=<field>(<tagname>)
+- [ ] tag=<field>::<tagname>
+- [X] **tag::<field>=<tagname>**
+
+</li>
 
 
 </ol>
