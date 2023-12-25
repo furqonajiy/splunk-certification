@@ -734,5 +734,59 @@ What is the correct syntax to search for a tag associated with a value on a spec
 
 </li>
 
+---
+
+<li>
+
+In most large Splunk environments, what is the most efficient command that can be used to group events by fields?
+
+- [ ] join
+- [X] **stats**
+- [ ] streamstats
+- [ ] transaction
+
+</li>
+
+---
+
+<li>
+
+Which workflow uses field values to perform a secondary search?
+
+- [ ] POST
+- [ ] Action
+- [X] **Search**
+- [ ] Sub-search
+
+</li>
+
+---
+
+<li>
+
+Which of the following statements describes field aliases?
+
+- [ ] Field alias names replace the original field name.
+- [X] **Field aliases can be used in lookup file definitions.**
+- [ ] Field aliases only normalize data across sources and sourcetypes.
+- [ ] Field alias names are not case sensitive when used as part of a search.
+
+</li>
+
+---
+
+<li>
+
+Which statement is true?
+
+- [ ] Pivot is used for creating datasets.
+- [ ] Data models are randomly structured datasets.
+- [X] **Pivot is used for creating reports and dashboards.**
+- [ ] In most cases, each Splunk user will create their own data model.
+
+</li>
+
+
+
 
 </ol>
