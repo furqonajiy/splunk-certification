@@ -480,7 +480,97 @@ Which of the following statements describe data model acceleration? (Choose all 
 
 </li>
 
+---
+
+<li>
+
+If no value is specified with the fillnull command, what default value will be used?
+
+- [X] **0**
+- [ ] N/A
+- [ ] ג€"
+- [ ] NULL
+
 </li>
+
+---
+
+<li>
+
+What other syntax will produce exactly the same results as | chart count over vendor_action by user?
+
+- [X] **| chart count by vendor_action, user**
+- [ ] | chart count over vendor_action, user
+- [ ] | chart count by vendor_action over user
+- [ ] | chart count over user by vendor_action
+
+</li>
+
+---
+
+<li>
+
+What are the two parts of a root event dataset?
+
+- [ ] Fields and variables.
+- [ ] Fields and attributes.
+- [X] **Constraints and fields.**
+- [ ] Constraints and lookups.
+
+</li>
+
+---
+
+<li>
+
+When using timechart, how many fields can be listed after a by clause?
+
+- [ ] 0, because timechart doesn't support using a by clause.
+- [X] **1, because _time is already implied as the x-axis.**
+- [ ] 2, because one field would represent the x-axis and the other would represent the y-axis.
+- [ ] There is no limit specific to timechart.
+
+</li>
+
+---
+
+<li>
+
+A field alias has been created based on an original field. A search without any transforming commands is then executed in Smart Mode. Which field name appears in the results?
+
+- [ ] Both will appear in the All Fields list, but only if the alias is specified in the search.
+- [X] **Both will appear in the Interesting Fields list, but only if they appear in at least 20 percent of events.**
+- [ ] The original field only appears in All Fields list and the alias only appears in the Interesting Fields list.
+- [ ] The alias only appears in the All Fields list and the original field only appears in the Interesting Fields list.
+
+</li>
+
+---
+
+<li>
+
+Which of the following statements describes macros?
+
+- [ ] A macro is a reusable search string that must contain the full search.
+- [ ] A macro is a reusable search string that must have a fixed time range.
+- [X] **A macro is a reusable search string that may have a flexible time range.**
+- [ ] A macro is a reusable search string that must contain only a portion of the search.
+
+</li>
+
+---
+
+<li>
+
+In what order are the following knowledge objects/configurations applied?
+
+- [ ] Field Aliases, Field Extractions, Lookups
+- [X] **Field Extractions, Field Aliases, Lookups**
+- [ ] Field Extractions, Lookups, Field Aliases
+- [ ] Lookups, Field Aliases, Field Extractions
+
+</li>
+
 
 
 
