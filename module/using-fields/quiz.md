@@ -1,4 +1,4 @@
-# [Module 3 - Intro to Splunk (eLearning)](https://education.splunk.com/Saba/Web_spf/NA10P2PRD105/app/me/learningeventdetail;spf-url=common%2Fledetail%2Fcours000000000003611%3FfromAutoSuggest%3Dtrue)
+# [Using Fields (eLearning)](https://education.splunk.com/Saba/Web_spf/NA10P2PRD105/app/me/learningeventdetail;spf-url=common%2Fledetail%2Fcours000000000003611%3FfromAutoSuggest%3Dtrue)
 
 # Quiz (Result 100%)
 
